@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Serverless Deep Learning"
-date:   2020-07-28 07:18:50 +0200
+date:   2020-08-16 07:18:50 +0200
 categories: digitalization serverless
 ---
 Stateless functions are ideal to be deployed on a Function as a Service (FaaS) serverless environment, 
@@ -71,24 +71,30 @@ Continuous functions are first order citizens of Deep Learning.
 
 All the sophisticated tasks delivered today by Deep Neural Networks, like for example: face identification, language translation, up to automatic code generation, are based on models that are embodied into stateless functions exposed through an API.
 
-The `value` of the function is distilled into the model from the large datasets used for the training of the network. The learnt weights of the model are represented in data structures optimized to be managed by GPUs.
+The `value` of the function is distilled into the model from the large datasets used for the training of the network. The weights of the model are represented in data structures like tensors, optimized to be managed by GPUs.
 
-Conceptually they are iedal to be deployed in a serverless FaaS environment, getting the benefit of scalability of the infrastructure managed by the provider.
+Conceptually a service embodied by a Deep Neural Network would benefit of the scalability provided by a serverless FaaS environment. The main issue that could affect this kind of deployment is the memory size available for a service, supported by FaaS providers, that couldn't satisfy the requirements of non-trivial DNNs.
 
-Continuous Delivery, smooth lifecycle, versioning of the service related to versioning of the model (new version like succ operations in the above example).
+A solution to this problem could be the adoption of compositional architecures for DNNs and fine tuning for specific Tasks by transfer learning.
 
-The usage of the deployed service with feedback collection can generate new dataset for the evolution of the model
+For example in Computer Vision are available Convolutional Neural Networks, trained on large datasets like Imagenet, that can be seen as composition of 2 Newral Networks. The fisrt is formed by the Convolutional and Pooling layers that generate the inner features used by the second Fully Connected Neural Network.
 
-Main constrain is the size limitation of current FaaS environment, can be addressed using:
-Compositional architecture for Neural Network and Transfer learning. For example GPT-3, small portion of the network is retrained
+The Transfer learning is used to specialize those large CNNs to Tasks using a small dataset to that task and acting on the FCNN parameters.
 
-I see a bright future for Serverless DL
+The 2 networks could be deployed on 2 providers, the first dedicated to the large general purpose inner layers and the much smaller second layer dedicated to the specific task.
 
+So there will be a provider dedicated to host large core networks, supporting the transfer learning activity that generate smaller network segments representing the intellectual property of the specific task, that could be deployed on a third party FaaS provider or on premise.
 
+## Delivery and Governance
 
+The adoption of Serverless approach simplifies the Continuous Delivery processes by versioning.
+The production environment will be represented by specific versions of the functions composing your applications. 
 
+For the DNNs based function, and ML models in general, the `SUCC` version will be the result of a new training, i.e. transfer learning, on a richer dataset, executed by a generator function that will respond to `generate-new-version` message.
 
-Example of `YEAR-MONTH-DAY-title.MARKUP`
+The non-production environments will be represented by set of functions with specific versions, some of them eventually shared with the production. You will need to manage function-version dependencies, visibility rules (who can access a function under test), etc..
+
+In this scenario `Governance is all you need` to make the next leap towards a dynamic ecosystem of Business Services.
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 

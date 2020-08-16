@@ -94,6 +94,8 @@ For the DNNs based function, and ML models in general, the `SUCC` version will b
 
 The non-production environments will be represented by set of functions with specific versions, some of them eventually shared with the production. You will need to manage function-version dependencies, visibility rules (who can access a function under test), etc..
 
+![Governance is all you need](/fp_blog/assets/images/Governance_is_all_you_need.png)
+
 In this scenario `Governance is all you need` to make the next leap towards a dynamic ecosystem of Business Services.
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

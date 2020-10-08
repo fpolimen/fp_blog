@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title:  "Continuous Delivery of services embodied by Deep Learning models"
-date:   2020-08-16 07:18:50 +0200
+date:   2020-10-06 07:18:50 +0200
 categories: digitalization serverless
 ---
 **Unfinished**

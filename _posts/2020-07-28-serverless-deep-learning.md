@@ -67,7 +67,7 @@ In this example the `value` is encoded in the representation of the function, no
 
 # Deep Learning
  
-Continuous functions are first order citizens of Deep Learning.
+Numerical functions are first order citizens of Deep Learning.
 
 All the sophisticated tasks delivered today by Deep Neural Networks, like for example: face identification, language translation, up to automatic code generation, are based on models that are embodied into stateless functions exposed through an API.
 

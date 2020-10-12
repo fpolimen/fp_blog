@@ -23,7 +23,7 @@ email: fp@fpolimeni.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is an experiment to try Jekyll site generator. The objective is to create 
   a simple front-end to aggregate services deployed on serverless providers.
-baseurl: "/fp_blog" # the subpath of your site, e.g. /blog
+# baseurl: "/fp_blog" # the subpath of your site, e.g. /blog
 # destination: ./fp_blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fpolimen

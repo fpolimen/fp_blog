@@ -94,7 +94,7 @@ For the DNNs based function, and ML models in general, the `SUCC` version will b
 
 The non-production environments will be represented by set of functions with specific versions, some of them eventually shared with the production. You will need to manage function-version dependencies, visibility rules (who can access a function under test), etc..
 
-![Governance is all you need](/fp_blog/assets/images/Governance_is_all_you_need.png)
+![Governance is all you need](/assets/images/Governance_is_all_you_need.png)
 
 In this scenario `Governance is all you need` to make the next leap towards a dynamic ecosystem of Business Services.
 

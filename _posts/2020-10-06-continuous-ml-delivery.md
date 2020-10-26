@@ -8,7 +8,7 @@ categories: digitalization serverless
 
 Many Digital Services will be embodied by Machine Learning and Deep Learning models trained on large datasets.
 
-New assets, characterizing these services, must be tracked and versioned in the lifecycle: 
+New assets, characterizing these services, must be tracked and versioned in the lifecycle, among others: 
 
  - **The dataset** used for the training
  - **The model** resulting from the training

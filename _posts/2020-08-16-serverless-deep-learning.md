@@ -71,19 +71,19 @@ Numerical functions are first order citizens of Deep Learning.
 
 All the sophisticated tasks delivered today by Deep Neural Networks, like for example: face identification, language translation, up to automatic code generation, are based on models that are embodied into stateless functions exposed through an API.
 
-The `value` of the function is distilled into the model from the large datasets used for the training of the network. The weights of the model are represented in data structures like tensors, optimized to be managed by GPUs.
+The `value` of the function is distilled into the model from the large datasets used for the training of the network. The weights of the model are represented in data structures optimized to be managed by GPUs in the training and the prediction activities.
 
-Conceptually a service embodied by a Deep Neural Network would benefit of the scalability provided by a serverless FaaS environment. The main issue that could affect this kind of deployment is the memory size available for a service, supported by FaaS providers, that couldn't satisfy the requirements of non-trivial DNNs.
+Conceptually a service embodied by a Deep Neural Network would benefit of the scalability provided by a serverless FaaS environment. One of the main issues that could affect this kind of deployment is the memory size available for a service, supported by FaaS providers, that couldn't satisfy the requirements of non-trivial DNNs.
 
-A solution to this problem could be the adoption of compositional architecures for DNNs and fine tuning for specific Tasks by transfer learning.
+A solution to this problem could be the adoption of compositional architecures for DNNs and fine tuning for specific Tasks by Transfer learning.
 
-For example in Computer Vision are available Convolutional Neural Networks, trained on large datasets like Imagenet, that can be seen as composition of 2 Newral Networks. The fisrt is formed by the Convolutional and Pooling layers that generate the inner features used by the second Fully Connected Neural Network.
+For example in Computer Vision are available Convolutional Neural Networks, trained on large datasets like Imagenet, that can be seen as composition of 2 Neural Networks. The fisrt is formed by the Convolutional and Pooling layers that generate the inner features that become the input used by the second Fully Connected Neural Network.
 
-The Transfer learning is used to specialize those large CNNs to Tasks using a small dataset to that task and acting on the FCNN parameters.
+The Transfer learning is used to specialize those large CNNs to Tasks using a small dataset, representative for that task, in the tuning the FCNN parameters.
 
-The 2 networks could be deployed on 2 providers, the first dedicated to the large general purpose inner layers and the much smaller second layer dedicated to the specific task.
+The 2 networks could be deployed on 2 providers. The first dedicated to the large general purpose inner layers and the second layer dedicated to the specific task.
 
-So there will be a provider dedicated to host large core networks, supporting the transfer learning activity that generate smaller network segments representing the intellectual property of the specific task, that could be deployed on a third party FaaS provider or on premise.
+So there will be a provider with special capabilities dedicated to host large core networks, supporting the transfer learning activity that generate smaller network segments representing the Intellectual Property of the specific task, that could be deployed on a third party FaaS provider or on premise.
 
 ## Delivery and Governance
 

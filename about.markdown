@@ -4,15 +4,22 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I am Francesco Polimeni, a software architect with a long track record in enterprise IT — from the early days of Java application servers and web services, through the rise of cloud computing, to today's serverless and AI-driven architectures.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This blog is a space for thinking out loud. The posts here trace a personal thread that started in the late 90s, when HP proposed the vision of *e-services* as the building block of a new digital economy, and runs forward to a present where deep learning models are deployed as stateless functions on Function-as-a-Service platforms.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+The central thesis is simple: **functional programming and serverless computing are natural companions**, and the rise of machine learning as a service is the clearest proof of that.
 
+## Interests
 
-[jekyll-organization]: https://github.com/jekyll
+- Serverless architectures and FaaS patterns
+- Functional programming and lambda calculus
+- Deep learning deployment and MLOps
+- Enterprise architecture and digital transformation
+- Static site generators (Jekyll, Hugo)
+
+## Contact
+
+- GitHub: [@fpolimen](https://github.com/fpolimen)
+- Twitter: [@fpolimen](https://twitter.com/fpolimen)
+- Email: polimeni.francesco@gmail.com
